@@ -7,6 +7,11 @@ const app = express();
 const porta = 3000;
 const servidor = 'localhost';
 
+app.use('/contato', (req, res, next) => {
+  console.log(req);
+  next();
+})
+
 app.use(bodyparser.urlencoded({extended: false}));
 app.use('/contato', express.static(__dirname + '/public/contato'));
 
