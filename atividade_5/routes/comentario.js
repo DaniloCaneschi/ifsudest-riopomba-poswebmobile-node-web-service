@@ -6,7 +6,7 @@ const bcrypt = require("bcrypt");
 const Comentario = require("../models/comentario");
 
 router.post("/", (req, res) => {
-  Pessoa.findOne({
+  Comentario.findOne({
     email: req.body.email,
     nome: req.body.nome,
     comentario: req.body.comentario
