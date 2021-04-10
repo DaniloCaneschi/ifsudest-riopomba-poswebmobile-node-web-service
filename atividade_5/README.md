@@ -2,4 +2,4 @@
 
 Criação de um servidor em NodeJs utilizando fremework Express.
 
-Utilização de middleware e body-parser. 
+Acesso ao banco de dados mongodb em cloud. 
